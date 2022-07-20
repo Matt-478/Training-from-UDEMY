@@ -45,7 +45,11 @@ let qArray = array.map((user) => {
 console.log(qArray)
 
 //Filter the array to only include users who are on team: red
+let filteredArray = array.filter((user) => {
+  return user.team === "red"
+})
 
+console.log(filteredArray)
 
 //Find out the total score of all users using reduce
 
