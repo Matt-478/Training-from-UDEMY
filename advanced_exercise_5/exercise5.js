@@ -52,9 +52,15 @@ let filteredArray = array.filter((user) => {
 console.log(filteredArray)
 
 //Find out the total score of all users using reduce
+let reducedArray = array.reduce((acc, user) => {
+	return acc + user.score
+}, 0)
+
+console.log(reducedArray)
 
 // (1), what is the value of i?
 // (2), Make this map function pure:
+
 // const arrayNum = [1, 2, 4, 5, 8, 9];
 // const newArray = arrayNum.map((num, i) => {
 // 	console.log(num, i);
